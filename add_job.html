@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Job</title>
+</head>
+<body>
+    <h2>Add Job</h2>
+    <form action="add_job.php" method="post">
+        <label for="company_id">Company ID:</label>
+        <input type="number" id="company_id" name="company_id" required><br><br>
+        
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" required><br><br>
+        
+        <label for="job_desc">Job Description:</label>
+        <textarea id="job_desc" name="job_desc" required></textarea><br><br>
+        
+        <label for="job_type">Job Type:</label>
+        <input type="text" id="job_type" name="job_type" required><br><br>
+        
+        <input type="submit" value="Add Job">
+    </form>
+    <a href='add_company.html'>Add a Company</a>
+</body>
+</html>
