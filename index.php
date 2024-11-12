@@ -23,7 +23,7 @@
     <title>Talent Hub</title>
 </head>
 
-<body class="bg-dark">
+<body>
 
     <?php
         $menu = new Menu;

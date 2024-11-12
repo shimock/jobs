@@ -153,7 +153,10 @@ class profile {
             }
             $edu[] = "<a>Add Record</a>";
         }else{
-            $edu[] = "<div class='text-center'>No Records Found</div>";
+            $edu[] = "<div class='bg-info bg-opacity-25 border border-info rounded text-center p-2'>"
+                . "<span class='bi-exclamation-circle p-2'></span>"
+                . "No Records Found"
+            . "</div>";
             $editable ? $edu[] = "<button class='btn btn-primary'>Add Record</button>" : "";
         }
         
@@ -176,7 +179,10 @@ class profile {
                 $edu[] = $row['END'];
             }
         }else{
-            $edu[] = "<div class=''>No Records Found</div>";
+            $edu[] = "<div class='bg-info bg-opacity-25 border border-info rounded text-center p-2'>"
+                . "<span class='bi-exclamation-circle p-2'></span>"
+                . "No Records Found"
+            . "</div>";
         }
         
         return join("<br>", $edu);
